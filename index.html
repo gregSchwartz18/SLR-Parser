@@ -1,0 +1,90 @@
+<html>
+
+<style>
+iframe {
+    width: 60vw; 
+    height: 33.75vw; /* original 56.25 */
+
+    max-width: 800px;
+    max-height: 450; /* x 0.5625 */
+    background:black;  
+}
+
+img{
+    width: 19.5vw; 
+    max-width: 263;
+}
+
+body{
+	max-width: 805px;
+}
+
+h2 {
+    margin-bottom: 0.2em;
+}
+
+</style>
+
+<head>
+<title>Automation Info</title>
+</head>
+
+<body>
+
+<h4></h4>
+
+<h2> Sourcepull Sheet Demo </h2>
+<i>Save SEs a few hours when making a sourcepull spreadsheet</i></br></br>
+<iframe src="https://drive.google.com/file/d/1rU96ORhZnd0jp0UF7aI5AE2fDSAYM1gI/preview" frameborder="0" allowfullscreen></iframe>
+
+ 
+</br></br>Try it out: <a href="https://bit.ly/SLR-demo" target="_blank" rel="noopener noreferrer">https://bit.ly/SLR-demo</a>
+
+</br></br><h4></h4>
+<h2> R1 Sheet Demo </h2>
+<i> Save MEMs 0.5-1 hours during R1</i></br></br>
+<iframe src="https://drive.google.com/file/d/1c4k9uQIt7Yo3GB4SDWv-etHa6IF1tJvu/preview" frameborder="0" allowfullscreen></iframe>
+
+
+</br></br>Try it out: <a href="https://bit.ly/SLR-demo" target="_blank" rel="noopener noreferrer">https://bit.ly/SLR-demo</a>
+
+</br></br><h4></h4>
+<h2> R2/Galley Sheet Demo </h2>
+<i> Prevent the footnote # confusion from last Galley Night</i></br></br>
+<iframe src="https://drive.google.com/file/d/1OpkSPJgkrZpXGTEtLX_FV7HmGqVOGYVq/preview" frameborder="0" allowfullscreen></iframe>
+
+
+</br></br>Try it out: <a href="https://bit.ly/SLR-demo" target="_blank" rel="noopener noreferrer">https://bit.ly/SLR-demo</a>
+
+</br></br><h4></h4>
+<h2> Sourcepull Mock-Up </h2>
+<i> Save MEMs a few hours during Sourcepull</i></br></br>
+<img src="https://drive.google.com/uc?export=view&id=1Xh5TZN8RJvJz0xu_JwzkARqAq5Zfkezz">
+<img src="https://drive.google.com/uc?export=view&id=1_XlyPKOcnkr_LKxkhB1EP1uiPVM2ajfV">
+<img src="https://drive.google.com/uc?export=view&id=1Sj13ZOf5nSHeKjf-JxsV0Wd686HeaBib">
+
+
+</br></br>
+
+<b> How would the sourcepuller work?</b> The best approach is likely to do it source-by-source. U.S. Reports are on HeinOnline and Hein's login is automatic for computers on the University network. So we could use a coding tool like <a href="https://pypi.org/project/beautifulsoup4/" target="_blank" rel="noopener noreferrer">Beautiful Soup</a> to navigate <a href="https://heinonline.org/HOL/CiteNav?collection=usreports&cittitle=" target="_blank" rel="noopener noreferrer">Hein's U.S. CiteNav</a>, search for the cite, pick the HeinOnline online version, and download.
+
+</br></br> If SLR can purchase a Westlaw or Lexis login for the bot, then many other reporters could be handled similarly.
+
+</br></br> Hein + Beautiful Soup can also be used to capture journal articles and their table of contents. This would definitely be less reliable than searching for cases, but "table of contents" placement seems predictable enough that Beautiful Soup can capture a large chunk of them. Plus the Auto-Puller will know when the table of contents hasn't been found, so worst case it will flag those instances and we'll just have to pull it manually. Even then it can give us the link to the Hein piece, saving us some time.
+
+</br></br> Federal statutes and codes would likely be the easiest sources. The Auto-Puller can just bootstrap <a href="uslaw.link" target="_blank" rel="noopener noreferrer">uslaw.link</a>.
+
+</br></br>
+
+<b> Will this take away from SLR's educational value?</b> This is something to be wary of! Pulling sources has helped me get more familiar with the law outside of cases and more capable of conducting thorough research. That said, I think this tool will increase SLR's educational value for three reasons. 
+
+</br></br>(1) MEMs will still learn how to pull. The Auto-Puller will not be able to handle every citation, and there are steep diminishing educational returns on MEMs pulling the same things again and again. (2) The work we can automate in our free time is unlikely to make up a significant part of professional work for very long. (3) The time freed up can be spent on more educational activities, like engaging with the actual article or doing your readings for class.
+
+
+
+</br></br></br></br></br></br>
+
+</br></br>
+</body>
+</html>
+
